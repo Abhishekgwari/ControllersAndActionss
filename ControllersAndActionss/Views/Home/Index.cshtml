@@ -5,3 +5,44 @@
 
 <h1>Index</h1>
 
+<h1>Current Date and Time is  @DateTime.Now</h1>
+
+<h1>Current Year  is  @DateTime.Now.Year</h1
+
+@{
+    var name = "Abhishek gwari";
+    var age = 22;
+}
+<h2>Name= @name</h2>
+<h2>age= @age</h2>
+
+n @{
+    var Myname = "Gwari";
+    if (Myname.Equals("Abhishek"))
+    {
+        <h2>Hey ABHISHEK</h2>
+    }
+    else
+    {
+        <h2>Bye Abhishek</h2>
+    }
+}
+
+
+@{
+
+    for(int i = 0; i<10; i++)
+    {
+        <h2>@i</h2>
+    }
+
+}
+
+@{
+    string[] names = { "Abhishek ", "Aman", "Lokesh" }; 
+
+    foreach(var item in names)
+    {
+        <h2>@names</h2>
+    }
+}
