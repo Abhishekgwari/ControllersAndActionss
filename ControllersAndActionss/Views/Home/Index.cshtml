@@ -1,11 +1,66 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+    //  Layout = "~/Views/Shared/_Layout2.cshtml";
+    Layout = null;
 }
 
  <h1>Index Page</h1>
+@* we dont need any typecasting in viewbag  but in view data we have to typecast*@
+
+
+@ViewBag.data6
+<br />
+@ViewData["data7"];
+ @ViewBag.data1
+<br />
+
+@ViewBag.data2
+<br />
+
+@ViewBag.data3
+<br />
+@{
+    foreach (var item in ViewBag.data4)
+    {
+        <h2>@item</h2>
+    }
+
+}
+
+@{
+    foreach (var item in ViewBag.data5)
+    {
+        <h2>@item</h2>
+    }
+
+}
+
+
+@*  
  <p>This is my home page</p>
+
+ @ViewData["Data1"]
+ <br />
+@ViewData["Data2"]
+<br />
+@ViewData["Data3"]
+
+@{
+    foreach (var item in (String[])ViewData["Data4"])
+    {
+        <h2>@item</h2>
+    }
+}
+
+@{
+    foreach (var item in (List<string>)ViewData["Data5"])
+    {
+        <h3>@item</h3>
+    }
+}
+ *@
 
 @*<h1>Current Date and Time is  @DateTime.Now</h1>
 
