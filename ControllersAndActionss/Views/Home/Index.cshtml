@@ -7,8 +7,29 @@
 }
 
  <h1>Index Page</h1>
-@* we dont need any typecasting in viewbag  but in view data we have to typecast*@
+ <p>This is a home page</p>
 
+
+@ViewData["Data1"];
+<br />
+@ViewBag.Data2;
+<br />
+@TempData["Data3"];
+
+
+
+@* @{
+    foreach (var item in (List<string>)TempData["Data4"]) 
+    {
+        <h2>@item</h2>
+    }
+} *@
+
+
+
+
+@* we dont need any typecasting in viewbag  but in view data we have to typecast*@
+@*
 
 @ViewBag.data6
 <br />
@@ -35,10 +56,10 @@
         <h2>@item</h2>
     }
 
-}
+} *@
 
 
-@*  
+@*
  <p>This is my home page</p>
 
  @ViewData["Data1"]
@@ -96,7 +117,7 @@ n @{
 }
 
 @{
-    string[] names = { "Abhishek ", "Aman", "Lokesh" }; 
+    string[] names = { "Abhishek ", "Aman", "Lokesh" };
 
     foreach(var item in names)
     {
